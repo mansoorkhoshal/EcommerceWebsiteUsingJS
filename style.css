@@ -135,3 +135,39 @@ body {
   font-weight: 700;
   font-size: 15px;
 }
+
+#features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 55px;
+}
+
+#features .fe-box {
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 50px 20px;
+}
+
+#features .fe-box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#features .fe-box:hover {
+  box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.1);
+}
+
+#features .fe-box h6 {
+  display: inline-block;
+  line-height: 1;
+  border-radius: 4px;
+  color: #088178;
+  background-color: #fddde4;
+  padding: 11px 10px;
+}
