@@ -59,6 +59,10 @@ body {
   padding: 20px 80px;
   background: #e3e6f3;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 99;
+  position: sticky;
+  top: 0;
+  right: 0;
 }
 
 #navbar {
@@ -87,7 +91,8 @@ body {
   color: #088178;
 }
 
-#navbar li a.active::after {
+#navbar li a.active::after,
+#navbar li a:hover::after {
   content: "";
   width: 30%;
   height: 2px;
@@ -95,4 +100,38 @@ body {
   position: absolute;
   bottom: -4px;
   left: 20px;
+}
+
+/* Home Page */
+
+#hero {
+  background-image: url(./images/hero4.png);
+  height: 88.3vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#hero h4 {
+  padding-bottom: 15px;
+}
+
+#hero h1 {
+  color: #088178;
+}
+
+#hero button {
+  background-image: url("images/button.png");
+  background-color: transparent;
+  color: #088178;
+  border: 0;
+  cursor: pointer;
+  padding: 14px 80px 14px 65px;
+  font-weight: 700;
+  font-size: 15px;
 }
