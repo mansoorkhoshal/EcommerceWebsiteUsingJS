@@ -129,7 +129,7 @@ button.white {
 }
 
 /* Home Page */
-
+/* 
 #hero {
   background-image: url(./images/hero4.png);
   height: 88.3vh;
@@ -143,6 +143,41 @@ button.white {
   justify-content: center;
 }
 
+#hero h4 {
+  padding-bottom: 15px;
+}
+
+#hero h1 {
+  color: #088178;
+}
+
+#hero button {
+  background-image: url("images/button.png");
+  background-color: transparent;
+  color: #088178;
+  border: 0;
+  cursor: pointer;
+  padding: 14px 80px 14px 65px;
+  font-weight: 700;
+  font-size: 15px;
+} */
+
+#hero {
+  background-image: url("./images/hero4.png");
+  height: 88vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+
+  padding: 0 80px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* text styling */
 #hero h4 {
   padding-bottom: 15px;
 }
@@ -531,11 +566,62 @@ footer a:hover {
 
 /* Media Queries */
 
-@media (mix-width:799) {
+@media (max-width: 799) {
   #navbar {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    background-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+  }
+
+  #hero {
+    height: 70vh;
+    padding: 0 40px;
+    background-position: top 20% right -150px;
+  }
+
+  #hero h1 {
+    font-size: 38px;
+  }
+
+  #hero h2 {
+    font-size: 30px;
   }
 }
+
+/* 
+@media (max-width: 477px) {
+  #hero {
+    height: 60vh;
+    padding: 0 20px;
+    background-position: 55%;
+  }
+
+  #hero h4 {
+    font-size: 14px;
+  }
+
+  #hero h2 {
+    font-size: 22px;
+  }
+
+  #hero h1 {
+    font-size: 26px;
+  }
+
+  #hero p {
+    font-size: 14px;
+  }
+
+  #hero button {
+    padding: 12px 40px 12px 35px;
+    font-size: 14px;
+  }
+} */
